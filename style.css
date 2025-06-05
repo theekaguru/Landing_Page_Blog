@@ -109,7 +109,7 @@ nav ul li a {
 }
 
 .infra {
-  background: #f25f3a;
+  background: #27262e;
   color: white;
 }
 
@@ -140,4 +140,76 @@ nav ul li a {
   color: #ccc;
   text-decoration: none;
   font-size: 14px;
+}
+.nav-toggle {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+  color: white;
+}
+
+
+@media (max-width: 768px) {
+  .topbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    display: none;
+    background: #f25f3a;
+    margin-top: 10px;
+    padding: 10px 0;
+  }
+
+  .nav-links.show-menu {
+    display: flex;
+  }
+
+  .nav-toggle {
+    display: block;
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+    margin-left: auto;
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  nav ul li {
+    width: 100%;
+    text-align: left;
+    padding: 10px 20px;
+  }
+
+  .buttons {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .buttons a {
+    width: 100%;
+    text-align: center;
+  }
+
+  .section-part {
+    flex-direction: column;
+  }
+
+  .reverse .section-part {
+    flex-direction: column;
+  }
+
+  .footer-box {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
