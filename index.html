@@ -13,7 +13,12 @@
       <div class="nav-toggle" onclick="toggleMenu()">☰</div>
       <nav>
         <ul>
-          <li><a href="#">Product</a></li>
+          <li class="dropdown" id="productDropdown">
+            <a href="#" class="dropdown-toggle" id="productLink">Product</a>
+            <div class="dropdown-content" id="productDropdownContent">
+              <p>Loading products...</p>
+            </div>
+          </li>
           <li><a href="#">Company</a></li>
           <li><a href="#">Connect</a></li>
         </ul>
@@ -23,6 +28,10 @@
         <a href="#">Sign Up</a>
       </div>
     </div>
+
+
+
+
     <div class="hero">
       <h1>A modern publishing platform</h1>
       <p>Grow your audience and build your online brand</p>
@@ -102,6 +111,9 @@
       </ul>
     </div>
   </div>
+  
+
+    <script src="myscript.js"></script> </body>
   <script src="script.js"></script>
 
 </body>
